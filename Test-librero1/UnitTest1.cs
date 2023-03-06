@@ -12,7 +12,7 @@ namespace Test_librero1
             var libros = new List<int>() { 1, 2 };
             Assert.ThrowsException<Exception>(() =>
             {
-                Main.Librero(bases, libros);
+                Librero1.Librero(bases, libros);
             });
         }
 
@@ -21,7 +21,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 1, 2 };
             var libros = new List<int>() { 1, 2 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(3, resultado);
         }
 
@@ -30,7 +30,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 1, 4 };
             var libros = new List<int>() { 1, 4 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(5, resultado);
         }
 
@@ -39,7 +39,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 1, 4 };
             var libros = new List<int>() { 4, 1 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(5, resultado);
         }
 
@@ -48,7 +48,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 1, 4, 5 };
             var libros = new List<int>() { 9, 6, 5 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(10, resultado);
         }
 
@@ -57,7 +57,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 1, 2 };
             var libros = new List<int>() { 4, 1 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(-1, resultado);
         }
 
@@ -66,7 +66,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 3, 2, 6, 2, 4, 2, 1, 6 };
             var libros = new List<int>() { 6, 8, 4, 8, 7, 9, 8, 4 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(10, resultado);
         }
 
@@ -75,7 +75,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 1, 1, 1, 21 };
             var libros = new List<int>() { 4, 4, 4, 4 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(-1, resultado);
         }
 
@@ -84,7 +84,7 @@ namespace Test_librero1
         {
             var bases = new List<int>() { 2, 2, 2 };
             var libros = new List<int>() { 8, 9, 7 };
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(-1, resultado);
         }
 
@@ -98,7 +98,7 @@ namespace Test_librero1
                 bases.Add(4);
                 libros.Add(6);
             }
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(10, resultado);
         }
         [TestMethod]
@@ -111,7 +111,7 @@ namespace Test_librero1
                 bases.Add(4);
                 libros.Add(6);
             }
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(10, resultado);
         }
         [TestMethod]
@@ -124,7 +124,7 @@ namespace Test_librero1
                 bases.Add(4);
                 libros.Add(6);
             }
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(10, resultado);
         }
         [TestMethod]
@@ -137,7 +137,7 @@ namespace Test_librero1
                 bases.Add(4);
                 libros.Add(6);
             }
-            var resultado = Main.Librero(bases, libros);
+            var resultado = Librero1.Librero(bases, libros);
             Assert.AreEqual(10, resultado);
         }
     }
