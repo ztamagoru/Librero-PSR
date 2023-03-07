@@ -40,6 +40,12 @@
 
             int expected = (bases.Sum() + libros.Sum()) / bases.Count;
 
+            if (bases.Any(bases => bases < 1 || bases > 1000))
+                throw new Exception("Error. Altura de base menor a 1 o mayor 1000 encontrada.");
+
+            if (libros.Any(libros => libros < 1 || libros > 1000))
+                throw new Exception("Error. Altura de libro menor a 1 o mayor 1000 encontrada.");
+
             for(int i = 0; i < bases.Count; i++)
             {
                 bool found = false;
