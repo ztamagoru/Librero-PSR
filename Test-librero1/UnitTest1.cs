@@ -142,12 +142,12 @@ namespace Test_librero1
         }
 
         [TestMethod]
-        public void Caso6()
+        [ExpectedException(typeof(Exception))]
+        public void TieneQueTirarErrorAProposisto()
         {
             var bases = new List<int>() { 1, 101 };
             var libros = new List<int>() { 0, 1 };
             var resultado = Librero1.Librero(bases, libros);
-            Assert.AreEqual(-1, resultado);
         }
     }
 }
