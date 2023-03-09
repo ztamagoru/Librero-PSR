@@ -149,5 +149,14 @@ namespace Test_librero1
             var libros = new List<int>() { 0, 1 };
             var resultado = Librero1.Librero(bases, libros);
         }
+
+        [TestMethod]
+        public void Caso6()
+        {
+            var bases = new List<int>() { 6, 7 };
+            var libros = new List<int>() { 6, 4 };
+            var resultado = Librero1.Librero(bases, libros);
+            Assert.AreEqual(-1, resultado);
+        }
     }
 }
