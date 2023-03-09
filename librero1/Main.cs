@@ -98,7 +98,11 @@ namespace librero1
             return expected;
 
             /*
-            // De igual manera, se puede llegar a la solución mediante el 
+            // De igual manera, se puede llegar a la solución sin la necesidad de ordenar los arrays, 
+            // buscando así entre todos todos los libros por cada base que tenga. Si encuentra un par
+            // que de el resultado esperado, este cambia a -1000 para no afectar así en el resto de la
+            // búsqueda. En caso de que no se encuentre un par, este ciclo se rompe y devuelve -1.
+            // Este método tarda muchísimo más que el anterior.
 
             for (int i = 0; i < bases.Count; i++)
             {
